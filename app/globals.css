@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -40,19 +40,13 @@ h4 {
 }
 
 .mainPage {
-  /* height: 80vh; */
-  background-color: #FBBF24;
-
-    /* padding: 100px; */
-    padding: 30px 160px;
-    font-family: "BrandonRegular";
-  /* width: 200vw; */
+  background-color: #fbbf24;
+  padding: 30px 160px;
+  font-family: "BrandonRegular";
 }
 
 .mainText {
   font-size: 60px;
-  /* line-height: 1rem; */
-  /* font-weight: 500; */
 }
 
 .circle-container {
@@ -70,25 +64,18 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #000; /* Optional: Add a border to the circles */
+  border: 2px solid #000;
 }
 
 .circle img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the circle without stretching */
+  object-fit: cover;
 }
-
 
 .applyClass {
   border-radius: 25px;
-
 }
-
-/* .faqMainList {
-  margin-top: 160px;
-  padding: 0px 100px;
-} */
 
 .mainListInner {
   display: flex;
@@ -106,7 +93,6 @@ h4 {
 .mainListInner .elementText {
   cursor: pointer;
 }
-
 
 .admissionQuestionSection {
   padding: 100px;
@@ -163,14 +149,11 @@ h4 {
   }
 }
 
-/* ======================= Acoordian Icons ================== */
-
 .accordion-button:not(.collapsed)::after,
 .accordion-button::after {
   --bs-accordion-btn-icon-width: 25px;
 }
 
-/* Purple */
 .purpleIcon .accordion-button:not(.collapsed)::after {
   background-image: url(../public/purple-minus-icon.png);
 }
@@ -179,7 +162,6 @@ h4 {
   background-image: url(../public/purple-plus-icon.png);
 }
 
-/* Green */
 .greenIcon .accordion-button:not(.collapsed)::after {
   background-image: url(../public/green-minus-icon.png);
 }
@@ -188,7 +170,6 @@ h4 {
   background-image: url(../public/green-plus-icon.png);
 }
 
-/* Orange */
 .orangeIcon .accordion-button:not(.collapsed)::after {
   background-image: url(../public/orange-minus-icon.png);
 }
@@ -197,7 +178,6 @@ h4 {
   background-image: url(../public/orange-plus-icon.png);
 }
 
-/* Pink */
 .pinkIcon .accordion-button:not(.collapsed)::after {
   background-image: url(../public/pink-minus-icon.png);
 }
@@ -206,7 +186,6 @@ h4 {
   background-image: url(../public/pink-plus-icon.png);
 }
 
-/* Blue */
 .blueIcon .accordion-button:not(.collapsed)::after {
   background-image: url(../public/blue-minus-icon.png);
 }
@@ -215,16 +194,6 @@ h4 {
   background-image: url(../public/blue-plus-icon.png);
 }
 
-/* Dark Blue */
-/* .darkBlueIcon .accordion-button:not(.collapsed)::after {
-  background-image: url(../public/darkBlue-minus-icon.png);
-}
-
-.darkBlueIcon .accordion-button::after {
-  background-image: url(../public/darkBlue-plus-icon.png);
-} */
-
-/* Yellow */
 .yellowIcon .accordion-button:not(.collapsed)::after {
   background-image: url(../public/yellow-minus-icon.png);
 }
@@ -247,6 +216,247 @@ h4 {
   }
 }
 
+.faqDescImg img {
+  width: 500px;
+  height: auto;
+}
+
+.faqMainList {
+  margin-top: 5px;
+  padding: 0px 100px;
+}
+
+.custom-list-item {
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+.custom-list-item::marker {
+  color: #f59e0b;
+} */
+
+
+
+/* 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "BrandonRegular";
+  src: url("../styles/Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_reg.otf");
+}
+
+p {
+  font-family: "BrandonRegular";
+  font-style: normal;
+  font-weight: 390 !important;
+  font-size: 23px !important;
+  line-height: 32px !important; 
+}
+
+h1 {
+  font-family: "BrandonRegular";
+  font-style: normal;
+  font-weight: 390 !important;
+  font-size: 64px !important;
+  line-height: 84px !important;
+}
+
+h2 {
+  font-family: "BrandonRegular";
+  font-style: normal;
+  font-weight: 390 !important;
+  font-size: 44px !important;
+  line-height: 58px !important; 
+}
+
+h4 {
+  font-family: "BrandonRegular";
+  font-style: normal;
+  font-weight: 390 !important;
+  font-size: 26px !important;
+  line-height: 32px !important; 
+}
+
+.mainPage {
+  background-color: #FBBF24;
+  padding: 30px 160px;
+  font-family: "BrandonRegular";
+}
+
+.mainText {
+  font-size: 60px;
+  line-height: 84px !important; 
+}
+
+.circle-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.applyClass {
+  border-radius: 25px;
+}
+
+.mainListInner {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.betweenLine {
+  background-color: #111;
+  width: 2px;
+  height: 35px;
+}
+
+.mainListInner .elementText {
+  cursor: pointer;
+}
+
+.admissionQuestionSection {
+  padding: 100px;
+}
+
+.headBottomLine,
+.headBottomLine img {
+  width: 100%;
+  height: auto;
+}
+
+.admissionQuestionHead h3 {
+  margin-left: 30px;
+}
+
+.admissionQuestionSection .accordion {
+  background: transparent;
+  --bs-accordion-bg: none;
+  --bs-accordion-border-color: none;
+}
+
+.admissionQuestionSection .accordion-button:not(.collapsed) {
+  color: #111;
+  background: none;
+  box-shadow: none;
+}
+
+.admissionQuestionSection h2 {
+  line-height: 0px;
+}
+
+.admissionQuestionSection .admissionAnswer {
+  padding-right: 500px;
+}
+
+@media (max-width: 800px) {
+  .admissionQuestionSection {
+    padding: 50px;
+  }
+
+  .admissionQuestionSection .admissionAnswer {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .admissionQuestionSection {
+    padding: 20px;
+  }
+
+  .admissionQuestionHead h3 {
+    margin: 0px;
+    text-align: center;
+  }
+}
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+  --bs-accordion-btn-icon-width: 25px;
+}
+
+.purpleIcon .accordion-button:not(.collapsed)::after {
+  background-image: url(../public/purple-minus-icon.png);
+}
+
+.purpleIcon .accordion-button::after {
+  background-image: url(../public/purple-plus-icon.png);
+}
+
+.greenIcon .accordion-button:not(.collapsed)::after {
+  background-image: url(../public/green-minus-icon.png);
+}
+
+.greenIcon .accordion-button::after {
+  background-image: url(../public/green-plus-icon.png);
+}
+
+.orangeIcon .accordion-button:not(.collapsed)::after {
+  background-image: url(../public/orange-minus-icon.png);
+}
+
+.orangeIcon .accordion-button::after {
+  background-image: url(../public/orange-plus-icon.png);
+}
+
+.pinkIcon .accordion-button:not(.collapsed)::after {
+  background-image: url(../public/pink-minus-icon.png);
+}
+
+.pinkIcon .accordion-button::after {
+  background-image: url(../public/pink-plus-icon.png);
+}
+
+.blueIcon .accordion-button:not(.collapsed)::after {
+  background-image: url(../public/blue-minus-icon.png);
+}
+
+.blueIcon .accordion-button::after {
+  background-image: url(../public/blue-plus-icon.png);
+}
+
+.yellowIcon .accordion-button:not(.collapsed)::after {
+  background-image: url(../public/yellow-minus-icon.png);
+}
+
+.yellowIcon .accordion-button::after {
+  background-image: url(../public/yellow-plus-icon.png);
+}
+
+@media (max-width: 800px) {
+  .accordion-button:not(.collapsed)::after,
+  .accordion-button::after {
+    --bs-accordion-btn-icon-width: 17px;
+  }
+}
+
+@media (max-width: 500px) {
+  .accordion-button:not(.collapsed)::after,
+  .accordion-button::after {
+    --bs-accordion-btn-icon-width: 17px;
+  }
+}
 
 .faqDescImg img {
   width: 500px;
@@ -258,3 +468,221 @@ h4 {
   padding: 0px 100px;
 }
 
+.custom-list-item {
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+.custom-list-item::marker {
+  color: #f59e0b;
+}
+
+
+.custom-line-height {
+  line-height: 1.2; 
+} */
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "BrandonRegular";
+  src: url("../styles/Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_reg.otf");
+}
+
+p {
+  font-family: "BrandonRegular";
+  font-style: normal;
+  font-weight: 390 !important;
+  font-size: clamp(1rem, 2vw, 1.5rem) !important;
+  line-height: clamp(1.5rem, 3vw, 2rem) !important;
+}
+
+h1 {
+  font-family: "BrandonRegular";
+  font-style: normal;
+  font-weight: 390 !important;
+  font-size: clamp(2rem, 5vw, 4rem) !important;
+  line-height: clamp(2.5rem, 6vw, 5rem) !important;
+}
+
+h2 {
+  font-family: "BrandonRegular";
+  font-style: normal;
+  font-weight: 390 !important;
+  font-size: clamp(1.5rem, 4vw, 2.5rem) !important;
+  line-height: clamp(2rem, 5vw, 3rem) !important;
+}
+
+h4 {
+  font-family: "BrandonRegular";
+  font-style: normal;
+  font-weight: 390 !important;
+  font-size: clamp(1rem, 3vw, 1.5rem) !important;
+  line-height: clamp(1.5rem, 3vw, 2rem) !important;
+}
+
+.mainPage {
+  background-color: #fbbf24;
+  padding: 30px 160px;
+  font-family: "BrandonRegular";
+}
+
+.mainText {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  line-height: clamp(2rem, 5vw, 4rem) !important;
+}
+
+.circle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.applyClass {
+  border-radius: 25px;
+}
+
+.mainListInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.betweenLine {
+  background-color: #111;
+  width: 2px;
+  height: 35px;
+}
+
+.mainListInner .elementText {
+  cursor: pointer;
+}
+
+.admissionQuestionSection {
+  padding: 20px;
+}
+
+.admissionQuestionHead h3 {
+  margin-left: 0;
+  text-align: center;
+}
+
+.admissionQuestionSection .accordion {
+  background: transparent;
+  --bs-accordion-bg: none;
+  --bs-accordion-border-color: none;
+}
+
+.admissionQuestionSection .accordion-button:not(.collapsed) {
+  color: #111;
+  background: none;
+  box-shadow: none;
+}
+
+.admissionQuestionSection h2 {
+  line-height: 0px;
+}
+
+.admissionQuestionSection .admissionAnswer {
+  padding-right: 20px;
+}
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+  --bs-accordion-btn-icon-width: 17px;
+}
+
+.purpleIcon .accordion-button:not(.collapsed)::after {
+  background-image: url(../public/purple-minus-icon.png);
+}
+
+.purpleIcon .accordion-button::after {
+  background-image: url(../public/purple-plus-icon.png);
+}
+
+.greenIcon .accordion-button:not(.collapsed)::after {
+  background-image: url(../public/green-minus-icon.png);
+}
+
+.greenIcon .accordion-button::after {
+  background-image: url(../public/green-plus-icon.png);
+}
+
+.orangeIcon .accordion-button:not(.collapsed)::after {
+  background-image: url(../public/orange-minus-icon.png);
+}
+
+.orangeIcon .accordion-button::after {
+  background-image: url(../public/orange-plus-icon.png);
+}
+
+.pinkIcon .accordion-button:not(.collapsed)::after {
+  background-image: url(../public/pink-minus-icon.png);
+}
+
+.pinkIcon .accordion-button::after {
+  background-image: url(../public/pink-plus-icon.png);
+}
+
+.blueIcon .accordion-button:not(.collapsed)::after {
+  background-image: url(../public/blue-minus-icon.png);
+}
+
+.blueIcon .accordion-button::after {
+  background-image: url(../public/blue-plus-icon.png);
+}
+
+.yellowIcon .accordion-button:not(.collapsed)::after {
+  background-image: url(../public/yellow-minus-icon.png);
+}
+
+.yellowIcon .accordion-button::after {
+  background-image: url(../public/yellow-plus-icon.png);
+}
+
+.faqDescImg img {
+  width: 100%;
+  height: auto;
+}
+
+.faqMainList {
+  margin-top: 5px;
+  padding: 0px 20px;
+}
+
+.custom-list-item {
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+.custom-list-item::marker {
+  color: #f59e0b;
+}
+
+.custom-line-height {
+  line-height: 1.2; /* Adjust the value as needed */
+}

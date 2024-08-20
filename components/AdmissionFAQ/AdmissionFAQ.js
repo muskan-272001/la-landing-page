@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import useFetch from "../../useFetch";
-import Accordion from "react-bootstrap/Accordion";
+// import Accordion from "react-bootstrap/Accordion";
 import Underline from "../../public/footer-border.png";
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/solid";
@@ -32,7 +32,7 @@ const AdmissionFAQ = () => {
                     <ChevronUpIcon
                       className={`${
                         open ? "transform rotate-180" : ""
-                      } w-5 h-5 text-purple-500`}
+                      } w-5 h-5 text-black-500`}
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">

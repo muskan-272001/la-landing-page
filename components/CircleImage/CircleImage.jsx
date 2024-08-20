@@ -13,7 +13,7 @@ const CircleImage = () => {
           <Image src={homeImage} alt="Image 1" />
         </div>
       </div>
-      <div class="circle flex justify-center">
+      <div class="circle">
         <Image src={homeImage} alt="Image 1" />
       </div>
     </>
