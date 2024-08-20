@@ -18,9 +18,9 @@ const MainPage = () => {
       <div className="mainPage">
         <div className="flex justify-center px-5">
           <div className="w-3/5 h-[70vh]">
-            <p className="mainText">
+            <h1 className="mainText">
               Growing with values and learning with joy.
-            </p>
+            </h1>
             <p>
               We follow a unique curriculum based on our Chinmaya Vision Program
             </p>

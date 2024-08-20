@@ -7,6 +7,38 @@
   src: url("../styles/Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_reg.otf");
 }
 
+p {
+  font-family: "BrandonRegular";
+  font-style: normal;
+  font-weight: 390 !important;
+  font-size: 23px !important;
+  line-height: 36px !important;
+}
+
+h1 {
+  font-family: "BrandonRegular";
+  font-style: normal;
+  font-weight: 390 !important;
+  font-size: 64px !important;
+  line-height: 96px !important;
+}
+
+h2 {
+  font-family: "BrandonRegular";
+  font-style: normal;
+  font-weight: 390 !important;
+  font-size: 44px !important;
+  line-height: 64px !important;
+}
+
+h4 {
+  font-family: "BrandonRegular";
+  font-style: normal;
+  font-weight: 390 !important;
+  font-size: 26px !important;
+  line-height: 36px !important;
+}
+
 .mainPage {
   /* height: 80vh; */
   background-color: #FBBF24;
@@ -19,6 +51,7 @@
 
 .mainText {
   font-size: 60px;
+  /* line-height: 1rem; */
   /* font-weight: 500; */
 }
 
