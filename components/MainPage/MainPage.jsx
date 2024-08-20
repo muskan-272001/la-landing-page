@@ -10,6 +10,7 @@ import CircleImage from "../CircleImage/CircleImage";
 import FAQ from "../FAQ/FAQ";
 import Testimonials from "../Testimonials/Testimonials";
 import AdmissionFAQ from "../AdmissionFAQ/AdmissionFAQ";
+import verticalLine from "../../public/verticalLine.png";
 
 const MainPage = () => {
   return (
@@ -33,6 +34,16 @@ const MainPage = () => {
           <div className="w-3/5 h-[70vh]">
             <SecondSection />
           </div>
+          <div className="verticalLine">
+                  <Image
+                    src={verticalLine}
+                    alt="line"
+                    width={2}
+                    height={1000}
+                    layout="fixed"
+                    loading="lazy"
+                  />
+                </div>
           <div className="w-2/5">
             <Classes />
           </div>

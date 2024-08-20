@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "BrandonRegular";
-  src: url("./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_reg.otf");
+  src: url("../styles/Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_reg.otf");
 }
 
 .mainPage {
