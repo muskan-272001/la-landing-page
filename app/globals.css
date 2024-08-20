@@ -2,32 +2,226 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "BrandonRegular";
+  src: url("./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_reg.otf");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.mainPage {
+  /* height: 80vh; */
+  background-color: #FBBF24;
+
+    /* padding: 100px; */
+    padding: 30px 160px;
+    font-family: "BrandonRegular";
+  /* width: 200vw; */
+}
+
+.mainText {
+  font-size: 60px;
+  /* font-weight: 500; */
+}
+
+.circle-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000; /* Optional: Add a border to the circles */
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the circle without stretching */
+}
+
+
+.applyClass {
+  border-radius: 25px;
+
+}
+
+/* .faqMainList {
+  margin-top: 160px;
+  padding: 0px 100px;
+} */
+
+.mainListInner {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.betweenLine {
+  background-color: #111;
+  width: 2px;
+  height: 35px;
+}
+
+.mainListInner .elementText {
+  cursor: pointer;
+}
+
+
+.admissionQuestionSection {
+  padding: 100px;
+}
+
+.headBottomLine,
+.headBottomLine img {
+  width: 100%;
+  height: auto;
+}
+
+.admissionQuestionHead h3 {
+  margin-left: 30px;
+}
+
+.admissionQuestionSection .accordion {
+  background: transparent;
+  --bs-accordion-bg: none;
+  --bs-accordion-border-color: none;
+}
+
+.admissionQuestionSection .accordion-button:not(.collapsed) {
+  color: #111;
+  background: none;
+  box-shadow: none;
+}
+
+.admissionQuestionSection h2 {
+  line-height: 0px;
+}
+
+.admissionQuestionSection .admissionAnswer {
+  padding-right: 500px;
+}
+
+@media (max-width: 800px) {
+  .admissionQuestionSection {
+    padding: 50px;
+  }
+
+  .admissionQuestionSection .admissionAnswer {
+    padding-right: 20px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+@media (max-width: 500px) {
+  .admissionQuestionSection {
+    padding: 20px;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .admissionQuestionHead h3 {
+    margin: 0px;
+    text-align: center;
   }
 }
+
+/* ======================= Acoordian Icons ================== */
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+  --bs-accordion-btn-icon-width: 25px;
+}
+
+/* Purple */
+.purpleIcon .accordion-button:not(.collapsed)::after {
+  background-image: url(../public/purple-minus-icon.png);
+}
+
+.purpleIcon .accordion-button::after {
+  background-image: url(../public/purple-plus-icon.png);
+}
+
+/* Green */
+.greenIcon .accordion-button:not(.collapsed)::after {
+  background-image: url(../public/green-minus-icon.png);
+}
+
+.greenIcon .accordion-button::after {
+  background-image: url(../public/green-plus-icon.png);
+}
+
+/* Orange */
+.orangeIcon .accordion-button:not(.collapsed)::after {
+  background-image: url(../public/orange-minus-icon.png);
+}
+
+.orangeIcon .accordion-button::after {
+  background-image: url(../public/orange-plus-icon.png);
+}
+
+/* Pink */
+.pinkIcon .accordion-button:not(.collapsed)::after {
+  background-image: url(../public/pink-minus-icon.png);
+}
+
+.pinkIcon .accordion-button::after {
+  background-image: url(../public/pink-plus-icon.png);
+}
+
+/* Blue */
+.blueIcon .accordion-button:not(.collapsed)::after {
+  background-image: url(../public/blue-minus-icon.png);
+}
+
+.blueIcon .accordion-button::after {
+  background-image: url(../public/blue-plus-icon.png);
+}
+
+/* Dark Blue */
+/* .darkBlueIcon .accordion-button:not(.collapsed)::after {
+  background-image: url(../public/darkBlue-minus-icon.png);
+}
+
+.darkBlueIcon .accordion-button::after {
+  background-image: url(../public/darkBlue-plus-icon.png);
+} */
+
+/* Yellow */
+.yellowIcon .accordion-button:not(.collapsed)::after {
+  background-image: url(../public/yellow-minus-icon.png);
+}
+
+.yellowIcon .accordion-button::after {
+  background-image: url(../public/yellow-plus-icon.png);
+}
+
+@media (max-width: 800px) {
+  .accordion-button:not(.collapsed)::after,
+  .accordion-button::after {
+    --bs-accordion-btn-icon-width: 17px;
+  }
+}
+
+@media (max-width: 500px) {
+  .accordion-button:not(.collapsed)::after,
+  .accordion-button::after {
+    --bs-accordion-btn-icon-width: 17px;
+  }
+}
+
+
+.faqDescImg img {
+  width: 500px;
+  height: auto;
+}
+
+.faqMainList {
+  margin-top: 5px;
+  padding: 0px 100px;
+}
+
